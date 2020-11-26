@@ -6,7 +6,7 @@ By Paul Livingstone
 AutoToc is a JavaScript tool that automatically creates a linked table of contents based on the heading tags within a web page.
 
 ## Examples
-1. [Basic example](examples/index.html)
+1. [Basic example](https://ocodia.github.io/AutoToc/)
 
 ## Features
 
