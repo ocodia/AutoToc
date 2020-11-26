@@ -49,11 +49,15 @@ AutoToc takes three parameters:
 AutoToc(containerElement, scope, options);
 ```
 
-### Scope (default: document.body)
+### Container element (required)
+
+The id of the html element that you want the table of contents attached to.
+
+### Scope (optional, default: document.body)
 
 By default AutoToc will generate a table of contents for all headings within the body element of the web page. You can optionally restrict the scope by providing the Id attribute of a different html element within the web page.
 
-### Options (name: default)
+### Options (optional)
 
 Options allow you to change the configuration of the table of contents.
 
