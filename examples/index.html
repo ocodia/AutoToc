@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/husk.css" media="screen" />
+    <title>AutoToc</title>
+    <style>
+      .toc-top-link{
+        margin: 0 0.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>AutoToc</h1>
+      <p>Table of contents generator</p>
+    </header>
+
+    <h1>About</h1>
+    <p>AutoToc generates a table of contents list based on headings within your HTML document.</p>
+    <h2>Example</h2>
+    <pre>
+&lt;script src=&quot;AutoToc.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  AutoToc("toc", "contents", { showTopLinks: true });
+&lt;/script&gt;</pre>
+<hr />
+    <h2>Table of contents</h2>
+    <nav role="navigation">
+      <ol id="toc"></ol>
+    </nav>
+    <main id="contents">
+      <h1>Heading 1 - level 1</h1>
+      <p>
+        Barbary Coast tackle Gold Road Buccaneer long boat quarter ballast crack
+        Jennys tea cup me loot. Pirate Round case shot come about Brethren of
+        the Coast Privateer spirits jack rum aye rope's end. Aye cog barque
+        bilge rat hearties port provost hogshead splice the main brace driver.
+      </p>
+
+      <h2>Heading 2 - level 1.1</h2>
+      <p>
+        Hogshead measured fer yer chains booty blow the man down jib gaff cackle
+        fruit bilge water pink boatswain. Yo-ho-ho sheet gabion bowsprit bilge
+        water hail-shot mutiny splice the main brace gaff schooner. Avast
+        Barbary Coast poop deck weigh anchor case shot gunwalls hearties
+        chandler take a caulk mutiny.
+      </p>
+
+      <h3>Heading 3 - level 1.1.1</h3>
+      <p>
+        Pink rutters cable jolly boat hogshead Jack Ketch keelhaul Admiral of
+        the Black ho shrouds. Grog gibbet starboard clap of thunder Sea Legs
+        jack mizzen draft gabion scourge of the seven seas. Sloop main sheet
+        Davy Jones' Locker sheet rum lass black jack keelhaul measured fer yer
+        chains gabion.
+      </p>
+
+      <h3>Heading 3 - level 1.1.2</h3>
+      <p>
+        Barbary Coast tackle Gold Road Buccaneer long boat quarter ballast crack
+        Jennys tea cup me loot. Pirate Round case shot come about Brethren of
+        the Coast Privateer spirits jack rum aye rope's end. Aye cog barque
+        bilge rat hearties port provost hogshead splice the main brace driver.
+      </p>
+      <p>
+        Hogshead measured fer yer chains booty blow the man down jib gaff cackle
+        fruit bilge water pink boatswain. Yo-ho-ho sheet gabion bowsprit bilge
+        water hail-shot mutiny splice the main brace gaff schooner. Avast
+        Barbary Coast poop deck weigh anchor case shot gunwalls hearties
+        chandler take a caulk mutiny.
+      </p>
+      <p>
+        Pink rutters cable jolly boat hogshead Jack Ketch keelhaul Admiral of
+        the Black ho shrouds. Grog gibbet starboard clap of thunder Sea Legs
+        jack mizzen draft gabion scourge of the seven seas. Sloop main sheet
+        Davy Jones' Locker sheet rum lass black jack keelhaul measured fer yer
+        chains gabion.
+      </p>
+
+      <h2>Heading 2 - level 1.2</h2>
+      <p>
+        Pink rutters cable jolly boat hogshead Jack Ketch keelhaul Admiral of
+        the Black ho shrouds. Grog gibbet starboard clap of thunder Sea Legs
+        jack mizzen draft gabion scourge of the seven seas. Sloop main sheet
+        Davy Jones' Locker sheet rum lass black jack keelhaul measured fer yer
+        chains gabion.
+      </p>
+
+      <h3>Heading 3 - level 1.2.1</h3>
+      <p>
+        Hogshead measured fer yer chains booty blow the man down jib gaff cackle
+        fruit bilge water pink boatswain. Yo-ho-ho sheet gabion bowsprit bilge
+        water hail-shot mutiny splice the main brace gaff schooner. Avast
+        Barbary Coast poop deck weigh anchor case shot gunwalls hearties
+        chandler take a caulk mutiny.
+      </p>
+
+      <h3>Heading 3 - level 1.2.2</h3>
+      <p>
+        Barbary Coast tackle Gold Road Buccaneer long boat quarter ballast crack
+        Jennys tea cup me loot. Pirate Round case shot come about Brethren of
+        the Coast Privateer spirits jack rum aye rope's end. Aye cog barque
+        bilge rat hearties port provost hogshead splice the main brace driver.
+      </p>
+
+      <h4>Heading 4 - level 1.2.2.1</h4>
+      <p>
+        Chase guns poop deck reef stern mizzen trysail ahoy holystone Pirate
+        Round grapple. Jack Tar hail-shot matey gangplank Sink me weigh anchor
+        black jack run a shot across the bow dead men tell no tales Blimey.
+        Spirits lad mizzen log hardtack lass sutler fore mutiny black jack.
+      </p>
+
+      <h4>Heading 4 - level 1.2.2.2</h4>
+      <p>
+        Sink me weigh anchor long clothes handsomely swing the lead boatswain
+        reef Chain Shot dance the hempen jig fire ship. Me handsomely come about
+        topgallant bucko chase take a caulk carouser black jack haul wind. Cog
+        Sail ho prow aft strike colors American Main Chain Shot rutters lookout
+        interloper.
+      </p>
+
+      <h5>Heading 5 - level 1.2.2.2.1</h5>
+
+      <p>
+        Pink rutters cable jolly boat hogshead Jack Ketch keelhaul Admiral of
+        the Black ho shrouds. Grog gibbet starboard clap of thunder Sea Legs
+        jack mizzen draft gabion scourge of the seven seas. Sloop main sheet
+        Davy Jones' Locker sheet rum lass black jack keelhaul measured fer yer
+        chains gabion.
+      </p>
+
+      <h5>Heading 5 - level 1.2.2.2.2</h5>
+
+      <p>
+        Barbary Coast tackle Gold Road Buccaneer long boat quarter ballast crack
+        Jennys tea cup me loot. Pirate Round case shot come about Brethren of
+        the Coast Privateer spirits jack rum aye rope's end. Aye cog barque
+        bilge rat hearties port provost hogshead splice the main brace driver.
+      </p>
+
+      <h5>Heading 5 - level 1.2.2.2.3</h5>
+
+      <p>
+        Pink rutters cable jolly boat hogshead Jack Ketch keelhaul Admiral of
+        the Black ho shrouds. Grog gibbet starboard clap of thunder Sea Legs
+        jack mizzen draft gabion scourge of the seven seas. Sloop main sheet
+        Davy Jones' Locker sheet rum lass black jack keelhaul measured fer yer
+        chains gabion.
+      </p>
+
+      <h2>Heading 2 - level 1.3</h2>
+      <p>
+        Hogshead measured fer yer chains booty blow the man down jib gaff cackle
+        fruit bilge water pink boatswain. Yo-ho-ho sheet gabion bowsprit bilge
+        water hail-shot mutiny splice the main brace gaff schooner. Avast
+        Barbary Coast poop deck weigh anchor case shot gunwalls hearties
+        chandler take a caulk mutiny.
+      </p>
+
+      <h3>Heading 3 - level 1.3.1</h3>
+      <p>
+        Chase guns poop deck reef stern mizzen trysail ahoy holystone Pirate
+        Round grapple. Jack Tar hail-shot matey gangplank Sink me weigh anchor
+        black jack run a shot across the bow dead men tell no tales Blimey.
+        Spirits lad mizzen log hardtack lass sutler fore mutiny black jack.
+      </p>
+
+      <h3>Heading 3 - level 1.3.2</h3>
+      <p>
+        Sink me weigh anchor long clothes handsomely swing the lead boatswain
+        reef Chain Shot dance the hempen jig fire ship. Me handsomely come about
+        topgallant bucko chase take a caulk carouser black jack haul wind. Cog
+        Sail ho prow aft strike colors American Main Chain Shot rutters lookout
+        interloper.
+      </p>
+    </main>
+    <footer>
+      <p>Husk - <a href="https://github.com/ocodia/Husk/">Github</a></p>
+    </footer>
+
+    <script src="../js/AutoToc.js"></script>
+    <script>
+      AutoToc("toc", "contents", { showTopLinks: true });
+    </script>
+  </body>
+</html>
