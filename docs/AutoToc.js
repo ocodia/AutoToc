@@ -138,9 +138,10 @@ let AutoToc = (element, scope, options) => {
     text = text
       .toLowerCase()
       .replace(/[^a-z0-9 -]/gi, "")
+      .replace("-", "")
       .replace(/ /gi, "-");
     text = text.substr(0, 50);
-    return text;
+    return rootElement.id + "-" + text;
   }
 
   function getAllHeadingsInScope() {
@@ -160,7 +161,7 @@ let AutoToc = (element, scope, options) => {
     for (var i = 0, n = elementsCollection.length; i < n; i++) {
       if (/^h\d{1}$/gi.test(elementsCollection[i].nodeName)) {
         const depth = Number(elementsCollection[i].nodeName.toLowerCase().substr(1, 1));
-        if (depth >= opts.startLevel) {
+        if (depth >= opts.startLevel && depth <= opts.depth) {
           headingCollection.push(elementsCollection[i]);
         }
       }
@@ -176,7 +177,7 @@ AutoToc.defaultOptions = {
   depth: 3,
   showTopLinks: false,
   topLinkToParentToc: false,
-  topLinkClass: "toc-top-link",
-  topBodyId: "toc-body-top",
+  topLinkClass: "autoTocTopLink",
+  topBodyId: "top",
 };
 

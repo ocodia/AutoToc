@@ -17,19 +17,62 @@
       <h1>AutoToc</h1>
       <p>Table of contents generator</p>
     </header>
-
+<section id="about">
     <h1>About</h1>
-    <p>AutoToc generates a table of contents list based on headings within your HTML document.</p>
+    <p>AutoToc generates a table of contents list based on headings within an HTML document.</p>
+    <ol id="toc"></ol>
+
     <h2>Example</h2>
-    <pre>
+    <p>Add a list element to your page:</p>
+<pre>
+&lt;ol id="toc"&gt;
+&lt;/ol&gt;      
+</pre>
+<p>Add AutoToc.js file to the page and run the AutoToc function, providing the list element <code>id</code> as an parameter:</p>
+<pre><code>
 &lt;script src=&quot;AutoToc.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
-  AutoToc("toc", "contents", { showTopLinks: true });
-&lt;/script&gt;</pre>
+  AutoToc("toc");
+&lt;/script&gt;</code></pre>
+
+<a href="https://raw.githubusercontent.com/ocodia/AutoToc/main/src/AutoToc.js" role="button">Download AutoToc.js</a>
+<a href="https://github.com/ocodia/AutoToc" role="button">View on Github</a>
+
 <hr />
-    <h2>Table of contents</h2>
+
+<h2>Options</h2>
+<h3>Scope</h3>
+<p>By default, AutoToc will provide a table of contents based on all headings available within the <code>body</code> html element. You can limit the table of contents scope by providing the <code>id</code> of a container element as a secondary, optional parameter.</p>
+<pre><code>&lt;script src=&quot;AutoToc.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  AutoToc("toc", "contents");
+&lt;/script&gt;
+</code></pre>
+
+  <h3>Default options</h3>
+  <p>There are additional options available via the <code>AutoToc.defaultOptions</code> object.</p>
+
+<pre><code>AutoToc.defaultOptions = {
+  startLevel: 1,
+  depth: 3,
+  showTopLinks: false,
+  topLinkToParentToc: false,
+  topLinkClass: "toc-top-link",
+  topBodyId: "toc-body-top",
+};
+</code></pre>
+
+<p>Usage:</p>
+<pre><code>&lt;script src=&quot;AutoToc.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  AutoToc("toc", "contents", { startLevel: 2, showTopLinks: true });
+&lt;/script&gt;
+</code></pre>
+</section>
+<hr/>
+    <h2>Example table of contents</h2>
     <nav role="navigation">
-      <ol id="toc"></ol>
+      <ol id="example"></ol>
     </nav>
     <main id="contents">
       <h1>Heading 1 - level 1</h1>
@@ -151,6 +194,15 @@
         Davy Jones' Locker sheet rum lass black jack keelhaul measured fer yer
         chains gabion.
       </p>
+      <h6>Heading 6 - level 1.2.2.2.3.1</h6>
+
+      <p>
+        Pink rutters cable jolly boat hogshead Jack Ketch keelhaul Admiral of
+        the Black ho shrouds. Grog gibbet starboard clap of thunder Sea Legs
+        jack mizzen draft gabion scourge of the seven seas. Sloop main sheet
+        Davy Jones' Locker sheet rum lass black jack keelhaul measured fer yer
+        chains gabion.
+      </p>
 
       <h2>Heading 2 - level 1.3</h2>
       <p>
@@ -184,7 +236,8 @@
 
     <script src="AutoToc.js"></script>
     <script>
-      AutoToc("toc", "contents", { showTopLinks: true });
+      AutoToc("toc", "about", { startLevel: 2, depth: 2, showTopLinks: true });
+      AutoToc("example", "contents", { depth: 6, showTopLinks: true, topLinkToParentToc: true });
     </script>
   </body>
 </html>

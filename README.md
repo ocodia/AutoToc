@@ -75,9 +75,9 @@ The following options are available:
 
 
 * **startLevel (default: 1)**: Sets the lowest heading level tag that should be included in the table.
-* **depth (default: 3)**: Sets how deep the table should go.
+* **depth (default: 3)**: Sets how deep the list should nest.
 * **showTopLinks (default: false)**: Sets if the top links should be shown.
 * **topLinkToParentToc (default: false)**: Sets if the top links should link to the top of the document body or the table of contents itself.
-* **topLinkClass (default: "toc-top-link")**: Sets the class of top links for styling.
-* **topBodyId (default: "toc-body-top")** AutoToc will add this Id to the document body if showTopLinks = true and and an id doesn't already exist. 
+* **topLinkClass (default: "autoTocTopLink")**: Sets the class of top links for styling.
+* **topBodyId (default: "top")** AutoToc will add this Id to the document body if showTopLinks = true and and an id doesn't already exist. 
 

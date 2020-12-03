@@ -183,7 +183,8 @@ a button,
 button,
 input[type="submit"],
 input[type="reset"],
-input[type="button"] {
+input[type="button"],
+a[role="button"] {
     font-size: 1rem;
     display: inline-block;
     padding: 6px 12px;
@@ -203,7 +204,8 @@ a button[disabled],
 button[disabled],
 input[type="submit"][disabled],
 input[type="reset"][disabled],
-input[type="button"][disabled] {
+input[type="button"][disabled],
+a[role="button"][disabled] {
     cursor: default;
     opacity: .5;
     cursor: not-allowed;
@@ -218,8 +220,14 @@ input[type="submit"]:enabled:hover,
 input[type="reset"]:focus,
 input[type="reset"]:enabled:hover,
 input[type="button"]:focus,
-input[type="button"]:enabled:hover {
+input[type="button"]:enabled:hover,
+a[role="button"]:focus,
+a[role="button"]:hover {
     background: var(--interactive-alt);
+}
+
+a[role="button"]:hover{
+    color: var(--btn-text);
 }
 
 code,
@@ -470,3 +478,9 @@ li small {
     }
 }
 
+a.autoTocTopLink {
+    font-size: 1.2rem;
+    text-decoration: none;
+    position: absolute;
+    margin: 0 0.2rem;
+}
