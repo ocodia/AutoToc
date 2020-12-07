@@ -3,16 +3,16 @@
 Version 0.1<br />
 By Paul Livingstone
 
-AutoToc is a JavaScript tool that automatically creates a linked table of contents based on the heading tags within a web page.
+AutoToc is a JavaScript tool that can create linked table of contents based on headings tags (e.g. <code>&lt;h1&gt;</code>) on a web page.
 
 [Examples](https://ocodia.github.io/AutoToc/)
 
 ## Features
 
-* Can be scoped to any area of the page (defaults to entire body)
-* Supports nested ordered and unordered lists, as well as a straight listing of links
-* Auto-creates anchors for each heading (if they don't already exist)
-* Supports multiple instances on one page.
+- [x] Can be scoped to any area of the page (defaults to entire body)
+- [ ] Supports nested ordered and unordered lists, as well as a straight listing of links
+- [x] Auto-creates anchors for each heading (if they don't already exist)
+- [x] Supports multiple instances on one page
 
 ## Usage
 
@@ -80,3 +80,6 @@ The following options are available:
 * **topLinkClass (default: "autoTocTopLink")**: Sets the class of top links for styling.
 * **topBodyId (default: "top")** AutoToc will add this Id to the document body if showTopLinks = true and and an id doesn't already exist. 
 
+## About
+
+Some of this code is based on Doug Neiner's excellent [TableOfContents](https://github.com/dcneiner/TableOfContents) jQuery plugin. I wanted to make something similar, but without requiring jQuery or other dependencies. 
