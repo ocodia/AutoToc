@@ -29,8 +29,7 @@
 &lt;/ol&gt;      
 </pre>
 <p>Add AutoToc.js file to the page and run the AutoToc function, providing the list element <code>id</code> as an parameter:</p>
-<pre><code>
-&lt;script src=&quot;AutoToc.js&quot;&gt;&lt;/script&gt;
+<pre><code>&lt;script src=&quot;AutoToc.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   AutoToc("toc");
 &lt;/script&gt;</code></pre>
@@ -68,9 +67,10 @@
   AutoToc("toc", "contents", { startLevel: 2, showTopLinks: true });
 &lt;/script&gt;
 </code></pre>
+<h2>Example table of contents</h2>
 </section>
 <hr/>
-    <h2>Example table of contents</h2>
+  
     <nav role="navigation">
       <ol id="example"></ol>
     </nav>
@@ -237,7 +237,7 @@
     <script src="AutoToc.js"></script>
     <script>
       AutoToc("toc", "about", { startLevel: 2, depth: 2, showTopLinks: true });
-      AutoToc("example", "contents", { depth: 6, showTopLinks: true, topLinkToParentToc: true });
+      AutoToc("example", "contents", { startLevel: 1, depth: 6, showTopLinks: true, topLinkToParentToc: true });
     </script>
   </body>
 </html>
